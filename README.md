@@ -51,14 +51,14 @@ O modelo maior (mpnet) melhora a vetorial, mas o ganho maior vem de combinar as 
 
 ### Onde a busca erra
 
+Estas são as perguntas que a configuração padrão mais erra. Em todas, quem pergunta usa palavras que o artigo não usa.
+
 | Pergunta | Documento certo | O que veio na frente | Causa |
 |---|---|---|---|
 | "Paguei com Pix e o pedido foi cancelado. Em quanto tempo o dinheiro volta?" | reembolso (4º) | formas de pagamento | "Pix" puxa o artigo de pagamento, que fala do Pix do checkout |
 | "Faltou o refrigerante no meu pedido, até quando posso reclamar?" | item faltando | atraso, retirada | o artigo diz "item faltando" e "solicitação"; a pergunta não usa nenhuma das duas |
-| "O entregador pediu dinheiro a mais na porta, é normal?" | golpes e código de entrega | gorjeta, ganhos do entregador | a regra está num artigo cujo título fala de golpes, não de cobrança |
+| "O entregador pediu dinheiro a mais na porta, é normal?" | golpes e código de entrega | gorjeta, ganhos do entregador | a regra está no artigo sobre golpes, e o título não menciona cobrança |
 | "Fui desativado, tenho como me defender?" | conta bloqueada (4º) | cancelamento, conta do cliente | sem stemming, "desativado" não casa com "desativada", nem "defender" com "defesa" |
-
-Nos quatro casos a pergunta usa palavras diferentes das do artigo.
 
 ### Geração
 
@@ -77,9 +77,7 @@ Resultado com busca híbrida (mpnet, trechos de 150 palavras, 3 trechos no conte
 
 Detalhes por pergunta em [`results/geracao.md`](results/geracao.md) e [`results/geracao.json`](results/geracao.json).
 
-Das 5 respostas erradas, 4 são as perguntas em que a busca não trouxe o documento certo entre os 3 primeiros (q01, q08, q18 e q27). Em três delas o modelo recusou, que é o que o prompt pede quando o contexto não tem a resposta. Na do Pix ele respondeu sobre o Pix do checkout, que era o que estava no contexto. A quinta (q19) foi rigor do juiz: a resposta deu o preço certo do plano e não mencionou o primeiro mês grátis.
-
-Nenhuma resposta inventou informação. Para acertar mais, o próximo passo é melhorar a busca, não o prompt.
+Das 5 respostas erradas, 4 são as perguntas em que a busca não trouxe o documento certo entre os 3 primeiros (q01, q08, q18 e q27). Em três delas o modelo recusou, que é o que o prompt pede quando o contexto não tem a resposta. Na do Pix ele respondeu sobre o Pix do checkout, que era o que estava no contexto. A quinta (q19) foi rigor do juiz: a resposta deu o preço certo do plano e não mencionou o primeiro mês grátis. Como nenhuma resposta inventou informação, o acerto que falta depende de a busca trazer o trecho certo.
 
 ## Como rodar
 
