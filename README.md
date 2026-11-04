@@ -66,7 +66,22 @@ Os quatro erros são de vocabulário. Os próximos passos que atacam esse proble
 
 `uv run rag avaliar-geracao` responde todas as perguntas e usa um segundo modelo como juiz (LLM-as-judge) para marcar cada resposta como **correta** (mesma informação essencial da resposta de referência) e **fiel** (não afirma nada que não esteja nos trechos). Recusas não passam pelo juiz: no escopo contam como erro e fora do escopo contam como acerto.
 
-O relatório sai em `results/geracao.md`, com taxa de acerto, fidelidade, recusa indevida, recusa correta fora do escopo, latência p50/p95, custo total e a lista de respostas erradas com o motivo dado pelo juiz.
+Resultado com busca híbrida (mpnet, trechos de 150 palavras, 3 trechos no contexto), `gpt-4.1-mini` respondendo e `gpt-4.1` como juiz:
+
+| Métrica | Valor |
+|---|---|
+| Corretas (32 perguntas no escopo) | 84% |
+| Fiéis aos trechos | 100% |
+| Recusa indevida (no escopo) | 9% |
+| Recusa correta (5 fora do escopo) | 100% |
+| Latência p50 / p95 | 0,8 s / 1,4 s |
+| Custo da rodada inteira | US$ 0,01 |
+
+Detalhes por pergunta em [`results/geracao.md`](results/geracao.md) e [`results/geracao.json`](results/geracao.json).
+
+Das 5 respostas erradas, 4 são as mesmas perguntas em que a busca não trouxe o documento certo entre os 3 primeiros (q01, q08, q18 e q27). Em três delas o modelo recusou, como o prompt manda quando o contexto não tem a resposta. Na do Pix, respondeu sobre o Pix do checkout, que era o que estava no contexto, sem inventar nada. A quinta (q19) é um caso de juiz rigoroso: a resposta deu o preço certo do plano, mas não mencionou o primeiro mês grátis.
+
+Ou seja, com o prompt atual o modelo não alucina; quando erra, é porque a busca não entregou o trecho certo. Melhorar a busca é o que mais aumenta o acerto.
 
 ## Como rodar
 

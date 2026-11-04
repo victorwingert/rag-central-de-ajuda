@@ -1,0 +1,505 @@
+[
+  {
+    "question_id": "q01",
+    "in_scope": true,
+    "answer": "O Pix gerado no checkout expira em 15 minutos e, se não for pago nesse prazo, o pedido é cancelado automaticamente e nada é cobrado. Portanto, o dinheiro não é debitado se o pedido for cancelado por falta de pagamento no prazo. [cliente-pagamento]",
+    "cited_doc_ids": [
+      "cliente-pagamento"
+    ],
+    "refused": false,
+    "correct": false,
+    "faithful": true,
+    "reason": "A resposta explica corretamente que, se o Pix não for pago no prazo, nada é cobrado. Porém, a pergunta era sobre reembolso após pagamento via Pix em caso de cancelamento, e não sobre não pagamento. Não responde ao prazo de devolução do dinheiro (até 1 dia útil).",
+    "latency_s": 1.4112157430499792,
+    "cost_usd": 0.0003264
+  },
+  {
+    "question_id": "q02",
+    "in_scope": true,
+    "answer": "O estorno no cartão de crédito aparece em até 2 faturas, conforme a data de fechamento do cartão [cliente-reembolso].",
+    "cited_doc_ids": [
+      "cliente-reembolso"
+    ],
+    "refused": false,
+    "correct": true,
+    "faithful": true,
+    "reason": "A resposta traz a mesma informação essencial da referência sobre o prazo do estorno no cartão de crédito (até 2 faturas) e não adiciona informações que não estejam nos trechos fornecidos.",
+    "latency_s": 0.8624344769632444,
+    "cost_usd": 0.0002868
+  },
+  {
+    "question_id": "q03",
+    "in_scope": true,
+    "answer": "Sim, se você pedir o reembolso como crédito na carteira do app, o valor cai na hora, mas não pode ser sacado depois, só usado em novos pedidos [cliente-reembolso].",
+    "cited_doc_ids": [
+      "cliente-reembolso"
+    ],
+    "refused": false,
+    "correct": true,
+    "faithful": true,
+    "reason": "A resposta informa corretamente que o reembolso pode ser recebido na hora como crédito na carteira do app, e que esse valor não pode ser sacado, apenas usado em novos pedidos, exatamente como consta na referência.",
+    "latency_s": 1.1238187950802967,
+    "cost_usd": 0.0003284
+  },
+  {
+    "question_id": "q04",
+    "in_scope": true,
+    "answer": "Depois que o restaurante confirmou o pedido, o botão de cancelar some do app e o cancelamento depende da análise do suporte, podendo haver cobrança de até 50% do valor dos itens. Você deve falar com o suporte pelo chat para tentar cancelar. Pedidos que já saíram para entrega não podem ser cancelados [cliente-cancelamento].",
+    "cited_doc_ids": [
+      "cliente-cancelamento"
+    ],
+    "refused": false,
+    "correct": true,
+    "faithful": true,
+    "reason": "A resposta informa corretamente que, após o restaurante aceitar, só é possível cancelar pelo suporte, sujeito à análise e possível cobrança de até 50% dos itens. Também menciona que pedidos já em entrega não podem ser cancelados, conforme os trechos fornecidos.",
+    "latency_s": 1.4734103500377387,
+    "cost_usd": 0.0003176
+  },
+  {
+    "question_id": "q05",
+    "in_scope": true,
+    "answer": "Pedidos que já saíram para entrega não podem ser cancelados. Se houver problema com a entrega, abra uma solicitação em **Ajuda com o pedido** depois que ele for concluído [cliente-cancelamento].",
+    "cited_doc_ids": [
+      "cliente-cancelamento"
+    ],
+    "refused": false,
+    "correct": true,
+    "faithful": true,
+    "reason": "A resposta afirma corretamente que pedidos que já saíram para entrega não podem ser cancelados, conforme consta no trecho de referência. Também orienta sobre o que fazer em caso de problemas, informação presente no trecho. Não há informações inventadas.",
+    "latency_s": 0.985339518985711,
+    "cost_usd": 0.0002472
+  },
+  {
+    "question_id": "q06",
+    "in_scope": true,
+    "answer": "Um pedido é considerado atrasado quando passa 20 minutos do fim da previsão exibida no momento da compra [cliente-atraso].",
+    "cited_doc_ids": [
+      "cliente-atraso"
+    ],
+    "refused": false,
+    "correct": true,
+    "faithful": true,
+    "reason": "A resposta traz exatamente a informação essencial da referência, afirmando que o pedido é considerado atrasado quando passa 20 minutos do fim da previsão exibida na compra, conforme o trecho [cliente-atraso]. Não há informações inventadas ou divergentes.",
+    "latency_s": 0.9411863760324195,
+    "cost_usd": 0.0002784
+  },
+  {
+    "question_id": "q07",
+    "in_scope": true,
+    "answer": "Se o pedido passar de 60 minutos de atraso, você recebe automaticamente um cupom de R$ 10 para o próximo pedido, válido por 15 dias [cliente-atraso].",
+    "cited_doc_ids": [
+      "cliente-atraso"
+    ],
+    "refused": false,
+    "correct": true,
+    "faithful": true,
+    "reason": "A resposta informa corretamente que, se o atraso for superior a 60 minutos, o cliente recebe um cupom de R$ 10 válido por 15 dias, exatamente como descrito na referência.",
+    "latency_s": 0.7943570429924875,
+    "cost_usd": 0.00027
+  },
+  {
+    "question_id": "q08",
+    "in_scope": true,
+    "answer": "Não encontrei essa informação na central de ajuda.",
+    "cited_doc_ids": [],
+    "refused": true,
+    "correct": false,
+    "faithful": true,
+    "reason": "recusou uma pergunta que tinha resposta",
+    "latency_s": 0.5890249779913574,
+    "cost_usd": 0.0002248
+  },
+  {
+    "question_id": "q09",
+    "in_scope": true,
+    "answer": "Sim, se o pedido inteiro veio errado, você recebe o reembolso total, incluindo a taxa de entrega. [cliente-item-faltando]",
+    "cited_doc_ids": [
+      "cliente-item-faltando"
+    ],
+    "refused": false,
+    "correct": true,
+    "faithful": true,
+    "reason": "A resposta afirma que em caso de pedido inteiro errado o reembolso é total, incluindo a taxa de entrega, exatamente como consta no trecho [cliente-item-faltando]. Não há informações inventadas.",
+    "latency_s": 0.7646621210733429,
+    "cost_usd": 0.0002876
+  },
+  {
+    "question_id": "q10",
+    "in_scope": true,
+    "answer": "Não, só um cupom pode ser usado por pedido. Cupons não se somam [cliente-cupons].",
+    "cited_doc_ids": [
+      "cliente-cupons"
+    ],
+    "refused": false,
+    "correct": true,
+    "faithful": true,
+    "reason": "A resposta afirma corretamente que só é possível usar um cupom por pedido e que cupons não se somam, exatamente como consta no trecho de referência.",
+    "latency_s": 0.6644539340632036,
+    "cost_usd": 0.00028680000000000003
+  },
+  {
+    "question_id": "q11",
+    "in_scope": true,
+    "answer": "Se o pedido for cancelado, o cupom volta para a sua conta se ainda estiver dentro da validade [cliente-cupons].",
+    "cited_doc_ids": [
+      "cliente-cupons"
+    ],
+    "refused": false,
+    "correct": true,
+    "faithful": true,
+    "reason": "A resposta traz a informação essencial da referência, informando que o cupom volta para a conta se ainda estiver na validade, e não adiciona informações que não estejam nos trechos fornecidos.",
+    "latency_s": 0.7000244839582592,
+    "cost_usd": 0.000268
+  },
+  {
+    "question_id": "q12",
+    "in_scope": true,
+    "answer": "Se o carrinho ficar abaixo do pedido mínimo do restaurante, o app cobra a diferença como taxa de pedido pequeno, de no máximo R$ 5 [cliente-taxas].",
+    "cited_doc_ids": [
+      "cliente-taxas"
+    ],
+    "refused": false,
+    "correct": true,
+    "faithful": true,
+    "reason": "A resposta explica corretamente que a cobrança extra é a taxa de pedido pequeno, cobrada quando o carrinho fica abaixo do pedido mínimo, e informa o valor máximo de R$ 5, conforme descrito no trecho de referência.",
+    "latency_s": 0.7256794880377129,
+    "cost_usd": 0.0003228
+  },
+  {
+    "question_id": "q13",
+    "in_scope": true,
+    "answer": "A taxa de serviço é de R$ 0,99 por pedido, cobrindo os custos do app. Assinantes do plano Clube não pagam essa taxa. [cliente-taxas] [cliente-clube]",
+    "cited_doc_ids": [
+      "cliente-taxas",
+      "cliente-clube"
+    ],
+    "refused": false,
+    "correct": true,
+    "faithful": true,
+    "reason": "A resposta informa corretamente o valor da taxa de serviço (R$ 0,99 por pedido) e a isenção para assinantes do Clube, exatamente como descrito nos trechos de referência, sem adicionar informações não presentes neles.",
+    "latency_s": 0.8635849240235984,
+    "cost_usd": 0.0002952
+  },
+  {
+    "question_id": "q14",
+    "in_scope": true,
+    "answer": "O Pix gerado no checkout expira em 15 minutos. Se não for pago nesse prazo, o pedido é cancelado automaticamente e nada é cobrado [cliente-pagamento].",
+    "cited_doc_ids": [
+      "cliente-pagamento"
+    ],
+    "refused": false,
+    "correct": true,
+    "faithful": true,
+    "reason": "A resposta traz exatamente a informação essencial da referência: o prazo de 15 minutos para pagar o Pix, o cancelamento automático do pedido e a ausência de cobrança após o prazo. Tudo está fielmente baseado nos trechos fornecidos.",
+    "latency_s": 0.9452422149479389,
+    "cost_usd": 0.0002944
+  },
+  {
+    "question_id": "q15",
+    "in_scope": true,
+    "answer": "Depois que o pedido foi feito, não é possível trocar o endereço pelo app. Se você digitou o endereço errado, fale com o suporte pelo chat o quanto antes para cancelar sem custo, se o restaurante ainda não confirmou o pedido. Para a mesma rua ou prédio, você pode mandar uma mensagem ao entregador pelo chat do pedido com complemento ou ponto de referência [cliente-endereco].",
+    "cited_doc_ids": [
+      "cliente-endereco"
+    ],
+    "refused": false,
+    "correct": true,
+    "faithful": true,
+    "reason": "A resposta traz as informações essenciais da referência: não é possível trocar o endereço pelo app, deve-se falar com o suporte pelo chat para cancelar sem custo se o restaurante ainda não confirmou, e para pequenas correções (mesma rua/prédio) pode-se avisar o entregador pelo chat. Tudo está presente nos trechos fornecidos.",
+    "latency_s": 1.0059570730663836,
+    "cost_usd": 0.00035479999999999995
+  },
+  {
+    "question_id": "q16",
+    "in_scope": true,
+    "answer": "Não, a avaliação do restaurante aparece na loja de forma anônima, portanto o restaurante não consegue ver quem deu nota baixa [cliente-avaliacao].",
+    "cited_doc_ids": [
+      "cliente-avaliacao"
+    ],
+    "refused": false,
+    "correct": true,
+    "faithful": true,
+    "reason": "A resposta afirma corretamente que a avaliação do restaurante é anônima e que o restaurante não consegue ver quem deu nota baixa, o que está explicitamente informado no trecho [cliente-avaliacao]. Não há informações inventadas.",
+    "latency_s": 0.6823553380090743,
+    "cost_usd": 0.0002184
+  },
+  {
+    "question_id": "q17",
+    "in_scope": true,
+    "answer": "Antes de excluir a conta, use o saldo da carteira, pois o saldo não usado é perdido na exclusão. A exclusão é definitiva depois de 30 dias, e pedidos em andamento precisam estar concluídos [cliente-conta].",
+    "cited_doc_ids": [
+      "cliente-conta"
+    ],
+    "refused": false,
+    "correct": true,
+    "faithful": true,
+    "reason": "A resposta informa corretamente que o saldo não usado é perdido na exclusão da conta, que a exclusão é definitiva após 30 dias e que pedidos em andamento precisam estar concluídos, conforme os trechos fornecidos.",
+    "latency_s": 0.8179144159657881,
+    "cost_usd": 0.00033079999999999996
+  },
+  {
+    "question_id": "q18",
+    "in_scope": true,
+    "answer": "Não encontrei essa informação na central de ajuda.",
+    "cited_doc_ids": [],
+    "refused": true,
+    "correct": false,
+    "faithful": true,
+    "reason": "recusou uma pergunta que tinha resposta",
+    "latency_s": 0.6505398059962317,
+    "cost_usd": 0.0002316
+  },
+  {
+    "question_id": "q19",
+    "in_scope": true,
+    "answer": "O Clube custa R$ 9,90 por mês e oferece entrega grátis em restaurantes participantes, em pedidos a partir de R$ 30, sem limite de pedidos no mês [cliente-clube].",
+    "cited_doc_ids": [
+      "cliente-clube"
+    ],
+    "refused": false,
+    "correct": false,
+    "faithful": true,
+    "reason": "A resposta informa corretamente o valor mensal da assinatura, mas omite o benefício do primeiro mês grátis para quem nunca assinou, que é uma informação essencial da referência.",
+    "latency_s": 1.0071974489837885,
+    "cost_usd": 0.0002968
+  },
+  {
+    "question_id": "q20",
+    "in_scope": true,
+    "answer": "Não há reembolso proporcional ao cancelar a assinatura do Clube, os benefícios continuam até o fim do período já pago [cliente-clube].",
+    "cited_doc_ids": [
+      "cliente-clube"
+    ],
+    "refused": false,
+    "correct": true,
+    "faithful": true,
+    "reason": "A resposta afirma corretamente que não há reembolso proporcional ao cancelar a assinatura e que os benefícios continuam até o fim do período já pago, exatamente como consta no trecho [cliente-clube].",
+    "latency_s": 0.8269444910110906,
+    "cost_usd": 0.0002184
+  },
+  {
+    "question_id": "q21",
+    "in_scope": true,
+    "answer": "Para entregar de moto, você precisa da CNH categoria A com a observação EAR (exerce atividade remunerada) e documento do veículo em dia. [entregador-cadastro]",
+    "cited_doc_ids": [
+      "entregador-cadastro"
+    ],
+    "refused": false,
+    "correct": true,
+    "faithful": true,
+    "reason": "A resposta traz exatamente as informações essenciais da referência: CNH categoria A com EAR e documento do veículo em dia. Não há informações inventadas ou ausentes.",
+    "latency_s": 0.8769118569325656,
+    "cost_usd": 0.0002696
+  },
+  {
+    "question_id": "q22",
+    "in_scope": true,
+    "answer": "Não, para entregar de bicicleta ou patinete não é necessário ter CNH [entregador-cadastro].",
+    "cited_doc_ids": [
+      "entregador-cadastro"
+    ],
+    "refused": false,
+    "correct": true,
+    "faithful": true,
+    "reason": "A resposta afirma corretamente que não é necessário ter CNH para entregas de bicicleta ou patinete, conforme explicitado no trecho [entregador-cadastro]. Não há informações inventadas.",
+    "latency_s": 0.8849460000637919,
+    "cost_usd": 0.00028
+  },
+  {
+    "question_id": "q23",
+    "in_scope": true,
+    "answer": "O entregador recebe o repasse semanal na quarta-feira seguinte às entregas feitas de segunda a domingo [entregador-pagamentos].",
+    "cited_doc_ids": [
+      "entregador-pagamentos"
+    ],
+    "refused": false,
+    "correct": true,
+    "faithful": true,
+    "reason": "A resposta informa corretamente que o repasse semanal é feito na quarta-feira seguinte às entregas realizadas de segunda a domingo, conforme descrito no trecho de referência.",
+    "latency_s": 0.7711684970417991,
+    "cost_usd": 0.0002576
+  },
+  {
+    "question_id": "q24",
+    "in_scope": true,
+    "answer": "O saque antecipado custa R$ 1,50 por saque. [entregador-pagamentos]",
+    "cited_doc_ids": [
+      "entregador-pagamentos"
+    ],
+    "refused": false,
+    "correct": true,
+    "faithful": true,
+    "reason": "A resposta informa corretamente o valor do saque antecipado (R$ 1,50 por saque), conforme o trecho de referência. Não há informações inventadas ou divergentes.",
+    "latency_s": 0.6209406009875238,
+    "cost_usd": 0.00029039999999999996
+  },
+  {
+    "question_id": "q25",
+    "in_scope": true,
+    "answer": "Você deve aguardar 8 minutos no local, contados pelo próprio app, antes de poder finalizar sem entrega. [entregador-cliente-ausente]",
+    "cited_doc_ids": [
+      "entregador-cliente-ausente"
+    ],
+    "refused": false,
+    "correct": true,
+    "faithful": true,
+    "reason": "A resposta informa corretamente que o entregador deve aguardar 8 minutos no local, contados pelo app, antes de finalizar sem entrega, conforme descrito no trecho [entregador-cliente-ausente]. Não há informações inventadas.",
+    "latency_s": 0.682674519950524,
+    "cost_usd": 0.0002832
+  },
+  {
+    "question_id": "q26",
+    "in_scope": true,
+    "answer": "O seguro contra acidentes cobre despesas médicas, indenização por invalidez e auxílio por dias parados, mas danos ao veículo não estão cobertos. Portanto, o conserto da moto não é coberto pelo seguro. [entregador-seguro]",
+    "cited_doc_ids": [
+      "entregador-seguro"
+    ],
+    "refused": false,
+    "correct": true,
+    "faithful": true,
+    "reason": "A resposta informa corretamente que danos ao veículo não estão cobertos pelo seguro, conforme explicitado no trecho de referência. Não há informações inventadas.",
+    "latency_s": 0.8884754680329934,
+    "cost_usd": 0.0003204
+  },
+  {
+    "question_id": "q27",
+    "in_scope": true,
+    "answer": "Não encontrei essa informação na central de ajuda.",
+    "cited_doc_ids": [],
+    "refused": true,
+    "correct": false,
+    "faithful": true,
+    "reason": "recusou uma pergunta que tinha resposta",
+    "latency_s": 0.544272045022808,
+    "cost_usd": 0.0002168
+  },
+  {
+    "question_id": "q28",
+    "in_scope": true,
+    "answer": "A comissão é de 23% sobre o valor dos itens se você usar os entregadores do app para fazer as entregas. Além disso, há uma taxa de 3,2% sobre pagamentos feitos online para o processamento do pagamento. A comissão não incide sobre a taxa de entrega [restaurante-planos].",
+    "cited_doc_ids": [
+      "restaurante-planos"
+    ],
+    "refused": false,
+    "correct": true,
+    "faithful": true,
+    "reason": "A resposta informa corretamente que a comissão é de 23% sobre os itens no Plano Entrega e menciona a taxa de 3,2% sobre pagamentos online, conforme descrito nos trechos de referência. Não há informações inventadas.",
+    "latency_s": 0.9812547439942136,
+    "cost_usd": 0.000332
+  },
+  {
+    "question_id": "q29",
+    "in_scope": true,
+    "answer": "Se a loja recusar 3 pedidos seguidos, ela é pausada automaticamente por 30 minutos para proteger a experiência dos clientes [restaurante-pausar].",
+    "cited_doc_ids": [
+      "restaurante-pausar"
+    ],
+    "refused": false,
+    "correct": true,
+    "faithful": true,
+    "reason": "A resposta traz exatamente a informação essencial da referência: a loja é pausada automaticamente por 30 minutos após recusar 3 pedidos seguidos. Não há informações inventadas ou divergentes.",
+    "latency_s": 0.7700905799865723,
+    "cost_usd": 0.0002124
+  },
+  {
+    "question_id": "q30",
+    "in_scope": true,
+    "answer": "O valor das vendas pagas online, já descontadas as comissões e taxas, é repassado ao restaurante a cada 30 dias, contados da data do pedido. O restaurante pode optar pelo repasse antecipado semanal, com custo de 2,5% sobre o valor antecipado. Pedidos pagos na entrega vão direto para o restaurante, e as comissões são cobradas no repasse seguinte [restaurante-repasse].",
+    "cited_doc_ids": [
+      "restaurante-repasse"
+    ],
+    "refused": false,
+    "correct": true,
+    "faithful": true,
+    "reason": "A resposta traz corretamente as informações essenciais sobre o prazo padrão de 30 dias, a opção de antecipação semanal com taxa de 2,5%, e o tratamento dos pagamentos feitos na entrega, conforme os trechos da referência.",
+    "latency_s": 1.1290527191013098,
+    "cost_usd": 0.00035360000000000003
+  },
+  {
+    "question_id": "q31",
+    "in_scope": true,
+    "answer": "O atendimento em Libras por vídeo é das 8h às 20h. [suporte-atendimento]",
+    "cited_doc_ids": [
+      "suporte-atendimento"
+    ],
+    "refused": false,
+    "correct": true,
+    "faithful": true,
+    "reason": "A resposta informa corretamente o horário do atendimento em Libras por vídeo (das 8h às 20h), conforme o trecho de referência. Não há informações inventadas ou divergentes.",
+    "latency_s": 0.8249719070736319,
+    "cost_usd": 0.0002496
+  },
+  {
+    "question_id": "q32",
+    "in_scope": true,
+    "answer": "Você pode dar gorjeta no checkout ou em até 2 horas depois da entrega, na tela do pedido [cliente-gorjeta].",
+    "cited_doc_ids": [
+      "cliente-gorjeta"
+    ],
+    "refused": false,
+    "correct": true,
+    "faithful": true,
+    "reason": "A resposta traz exatamente a mesma informação essencial da referência, sem adicionar ou omitir dados, e tudo que afirma está nos trechos fornecidos.",
+    "latency_s": 0.8163623630534858,
+    "cost_usd": 0.00024119999999999998
+  },
+  {
+    "question_id": "oos1",
+    "in_scope": false,
+    "answer": "Não encontrei essa informação na central de ajuda.",
+    "cited_doc_ids": [],
+    "refused": true,
+    "correct": true,
+    "faithful": true,
+    "reason": "fora do escopo",
+    "latency_s": 0.6818784259958193,
+    "cost_usd": 0.0002136
+  },
+  {
+    "question_id": "oos2",
+    "in_scope": false,
+    "answer": "Não encontrei essa informação na central de ajuda.",
+    "cited_doc_ids": [],
+    "refused": true,
+    "correct": true,
+    "faithful": true,
+    "reason": "fora do escopo",
+    "latency_s": 0.6882986819837242,
+    "cost_usd": 0.00024839999999999997
+  },
+  {
+    "question_id": "oos3",
+    "in_scope": false,
+    "answer": "Não encontrei essa informação na central de ajuda.",
+    "cited_doc_ids": [],
+    "refused": true,
+    "correct": true,
+    "faithful": true,
+    "reason": "fora do escopo",
+    "latency_s": 0.8973309471039101,
+    "cost_usd": 0.0002448
+  },
+  {
+    "question_id": "oos4",
+    "in_scope": false,
+    "answer": "Não encontrei essa informação na central de ajuda.",
+    "cited_doc_ids": [],
+    "refused": true,
+    "correct": true,
+    "faithful": true,
+    "reason": "fora do escopo",
+    "latency_s": 0.5923110420117155,
+    "cost_usd": 0.00025519999999999997
+  },
+  {
+    "question_id": "oos5",
+    "in_scope": false,
+    "answer": "Não encontrei essa informação na central de ajuda.",
+    "cited_doc_ids": [],
+    "refused": true,
+    "correct": true,
+    "faithful": true,
+    "reason": "fora do escopo",
+    "latency_s": 0.547977348905988,
+    "cost_usd": 0.0002248
+  }
+]
